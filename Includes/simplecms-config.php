@@ -24,6 +24,9 @@ define('DB_PASSWORD', $connectstr_dbpassword);
 /** MySQL hostname */
 define('DB_HOST', $connectstr_dbhost);
 
-    define('DEFAULT_ADMIN_USERNAME', 'admin');
-    define('DEFAULT_ADMIN_PASSWORD', 'password');
+
+//Admin User 
+define('DEFAULT_ADMIN_USERNAME', getenv('SITE_ADMIN_USER'));
+define('DEFAULT_ADMIN_PASSWORD', getenv('SITE_ADMIN_PASSWORD'));
+
 ?>
