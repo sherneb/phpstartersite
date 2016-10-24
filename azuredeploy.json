@@ -26,7 +26,15 @@
     "branch": {
       "type": "string",
       "defaultValue": "master"
-    }
+    },
+    "SiteAdminusername":    {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "SiteAdminPassword":{  
+         "type":"string",
+         "defaultValue":""
+      }
   },
   "resources": [
     {
@@ -58,7 +66,9 @@
            "appSettings": [
             { "name": "WEBSITE_MYSQL_GENERAL_LOG", "value": "0" },
             { "name": "WEBSITE_MYSQL_SLOW_QUERY_LOG", "value": "0" },
-            { "name": "WEBSITE_MYSQL_ARGUMENTS", "value": "--max_allowed_packet=16M" }
+            { "name": "WEBSITE_MYSQL_ARGUMENTS", "value": "--max_allowed_packet=16M" },
+            { "name": "SITE_ADMIN_USER", "value": "[parameters('SiteAdminusername')]" },
+            { "name": "SITE_ADMIN_PASSWORD", "value": "[parameters('SiteAdminPassword')]" }             
           ]
         }
       },
