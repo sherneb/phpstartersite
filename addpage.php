@@ -28,7 +28,7 @@
         }
         else
         {
-            echo 'Failed adding new page';
+            echo 'TESR';
         }
     }
 ?>
